@@ -29,13 +29,16 @@ header nav{
     justify-content: space-around;
     position: fixed;
     background-color: #fff;
+    z-index: 99999999999999999999;
 
 }
 .cau2{
 }
 .cau2 ul{
     display: flex;
-    align-items: center
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .cau2 ul li{
     font-family: Open Sans;
@@ -47,6 +50,7 @@ header nav{
     position: relative;
     cursor: pointer;
     padding-bottom: 10px;
+    height: 80px;
 }
 .cau2 ul li:hover .gachan{
     display: block;
@@ -93,10 +97,13 @@ header nav{
 }
 .cau3 ul{
     display: block;
-    /* padding: 10px 10px; */
+    padding: 0;
+    padding: 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.cau3 ul li{
+.cau3 ul > li{
+    height: 40px;
+    line-height: 40px;
     text-align: justify;
 }
 .cau3 ul li:hover{
@@ -276,7 +283,7 @@ header nav{
     line-height: 17px;
     padding-top: 12px;
     padding-left: 34px;
-    color: #6d5862;
+    color: #ff00dd;
 }
 .slider{
     width: 100%;
@@ -557,7 +564,7 @@ header nav{
 .slide-pos-1{
     position: absolute;
     top: 150px;
-    z-index: 9999999999999999999;
+    z-index: 999999999999999;
     
     width: 80%;
 }
@@ -917,7 +924,7 @@ header nav{
 .proocess{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
@@ -934,9 +941,25 @@ header nav{
     -moz-animation: xoayvong 10s linear 0s infinite;
     -o-animation: xoayvong 10s linear 0s infinite; 
 }
+.proo-rotate img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
 .col-proocess-1{
     width: 30%;
     z-index: 9999;
+}
+.man-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.col-ce{
+    width: 40%;
 }
 .rotate-pro{
     width: 10px;
